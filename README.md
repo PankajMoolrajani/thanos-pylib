@@ -47,7 +47,7 @@ python -m build --wheel
 
 This creates a `.whl` file in the `dist/` directory.
 
-**Note on Source Code**: By default, Python wheels contain the source `.py` files. When users install the package, Python compiles these to `.pyc` bytecode on their system. If you need stronger code protection, see the "Security Note" section above.
+**Note on Source Code**: By default, Python wheels contain the source `.py` files. When users install the package, Python compiles these to `.pyc` bytecode on their system. If you need stronger code protection, see the "Security Note" section below.
 
 ## Publishing to PyPI
 

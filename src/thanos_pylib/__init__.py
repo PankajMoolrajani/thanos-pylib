@@ -24,5 +24,10 @@ def greet(name):
         
     Returns:
         str: A personalized greeting message
+        
+    Raises:
+        ValueError: If name is None or empty
     """
+    if not name:
+        raise ValueError("Name cannot be None or empty")
     return f"Hello, {name}! Welcome to Thanos PyLib!"
