@@ -28,6 +28,6 @@ def greet(name):
     Raises:
         ValueError: If name is None or empty
     """
-    if not name:
-        raise ValueError("Name cannot be None or empty")
+    if name is None or not isinstance(name, str) or not name.strip():
+        raise ValueError("Name must be a non-empty string")
     return f"Hello, {name}! Welcome to Thanos PyLib!"
